@@ -1,0 +1,104 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">VD_Ecom</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div
+    class="collapse navbar-collapse justify-content-between"
+    id="navbarSupportedContent"
+  >
+    <ul class="navbar-nav mr-auto">
+      <!-- language -->
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+          (click)="openDropdown()"
+        >
+          Language
+        </a>
+        <div
+          class="dropdown-menu"
+          aria-labelledby="navbarDropdown"
+          [ngStyle]="{ display: isDropdownOpen ? 'block' : 'none' }"
+        >
+          <a class="dropdown-item" (click)="switchLanguage('en')">ENG</a>
+          <a class="dropdown-item" (click)="switchLanguage('hi')">HIN</a>
+        </div>
+      </li>
+      <!-- Home -->
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/home">Home</a>
+      </li>
+      <!-- About Us -->
+      <li class="nav-item">
+        <a class="nav-link disabled" routerLink="#">About Us</a>
+      </li>
+      <!-- Order -->
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/my-order">Order A</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/admin/all-order">All Order B</a>
+      </li>
+      <!-- Product -->
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/seller/product">Product</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/admin/product">All Product A</a>
+      </li>
+      <!-- Users -->
+      <li class="nav-item">
+        <a class="nav-link" routerLink="admin/user">Users A</a>
+      </li>
+      <!-- Contact Us -->
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/contact-us">Contact Us</a>
+      </li>
+    </ul>
+    <!-- Search -->
+    <form class="form-inline my-2 my-lg-0">
+      <input
+        class="form-control mr-sm-2"
+        type="search"
+        placeholder="Search"
+        aria-label="Search"
+      />
+      <button class="btn btn-outline-success my-2 my-sm-0 ms-3" type="submit">
+        Search
+      </button>
+    </form>
+    <!-- Sign-in -->
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a routerLink="/sign-in" class="nav-link sim-pointer">Sign-in</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/sign-up" class="nav-link sim-pointer">Sign-up</a>
+      </li>
+    </ul>
+    <!-- Profile & Logout -->
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a routerLink="/my-profile" class="nav-link sim-pointer">My Profile</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/logout" class="nav-link sim-pointer">Log Out</a>
+      </li>
+    </ul>
+  </div>
+</nav>

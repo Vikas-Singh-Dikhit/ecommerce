@@ -1,0 +1,61 @@
+{
+  "user": [
+    {
+      "name": "Aashish Mishra",
+      "mobNumber": "1234567891",
+      "age": 29,
+      "dob": "1995-05-12",
+      "email": "admin@gmail.com",
+      "password": "123456789",
+      "address": {
+        "addLine1": "District Center",
+        "addLine2": "JanakPuri",
+        "city": "New Delhi",
+        "zipcode": "110052"
+      },
+      "language": ["English", "Hindi", "Bhojpuri", "Telgu", "Kannad"],
+      "gender": "Male",
+      "aboutYou": "I am a Programmer...",
+      "uploadPhoto": "aashish.png",
+      "agreetc": true,
+      "role": "admin",
+      "id": 1
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Product 1",
+      "uploadPhoto": "",
+      "productDesc": "",
+      "mrp": "300",
+      "dp": "199",
+      "status": "inactive"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "userId": 123,
+      "sellerId": 123456,
+      "product": {
+        "id": 1,
+        "name": "Product 1",
+        "uploadPhoto": "",
+        "productDesc": "",
+        "mrp": "300",
+        "dp": "199",
+        "status": "inactive"
+      },
+      "deliveryAddress": {
+        "addLine1": "District Center",
+        "addLine2": "JanakPuri",
+        "city": "New Delhi",
+        "state": "",
+        "zipcode": "110052"
+      },
+      "contact": "7894561231",
+      "timeDate": ""
+    }
+  ]
+}
